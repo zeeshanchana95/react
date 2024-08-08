@@ -1,5 +1,13 @@
+import Chai from "./Chai";
+
 function App() {
-  return <h1>Chaie or React | Zeeshan Ahmed</h1>;
+  return (
+    <>
+      <Chai />
+      <h2>chai or react</h2>
+      <p>some text</p>
+    </>
+  );
 }
 
 export default App;
