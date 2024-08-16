@@ -24,8 +24,8 @@ function InputBox({
         </label>
         <input
           id={amountInputId}
-          type="number"
           className="outline-none w-full bg-transparent py-1.5"
+          type="number"
           placeholder="Amount"
           disabled={amountDisable}
           value={amount}
@@ -34,11 +34,10 @@ function InputBox({
           }
         />
       </div>
-
       <div className="w-1/2 flex flex-wrap justify-end text-right">
         <p className="text-black/40 mb-2 w-full">Currency Type</p>
         <select
-          className="rouned-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
+          className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
           value={selectCurrency}
           onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
           disabled={currencyDisable}
@@ -53,3 +52,5 @@ function InputBox({
     </div>
   );
 }
+
+export default InputBox;
